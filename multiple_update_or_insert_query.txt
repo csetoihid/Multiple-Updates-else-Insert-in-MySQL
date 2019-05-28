@@ -1,0 +1,5 @@
+INSERT INTO `student_list` (`id`, `school_id`, `stu_master_id`, `stu_name`, `stu_email`, `stu_mobile`, `stu_dob`, `stu_class`, `stu_batch`, `stu_section`, `created_at`, `updated_at`) VALUES 
+	(NULL, '1', '10', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(NULL, '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+	(NULL, '1', '11', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL) 
+	ON DUPLICATE KEY UPDATE stu_master_id=VALUES(stu_master_id),stu_name=VALUES(stu_name)
